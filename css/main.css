@@ -199,8 +199,8 @@ textarea {
   background-color: #1cc70a;
 }
 .vh-100 {
-  height: -webkit-calc(100vh - 130px);
-  height: calc(100vh - 130px);
+  height: -webkit-calc(100vh - 90px);
+  height: calc(100vh - 90px);
 }
 .header {
   position: fixed;
