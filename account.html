@@ -22,6 +22,15 @@
             <div class="col-xl-12">
                 <div class="header__wrapper d-flex a-center s-between">
                     <div class="header__logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+                    <div class="header__balance">
+                        <button type="button" class="btn btn-primary snap-action" data-toggle="modal" data-target="#exampleModal">
+                            <span class="balance">$45.78 |</span>
+                            <span class="cashout">Cashout</span>
+                        </button>
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Launch demo modal
+                          </button> -->
+                    </div>
                     <div class="header__nav d-flex a-center">
                         <nav class="main-nav">
                             <ul>
@@ -47,27 +56,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="hero-block _coins d-flex vh-100">
+                    <div class="hero-block _no-abs d-flex">
                         <div class="hero-block__wrapper">
-                            <div class="form-block">
-                                    <h6 class="form-block__title">Join For Free</h6>
-                                    <div class="form-block__content">
-                                        <div class="form-block__input">
-                                            <label for="email">Email</label>
-                                            <input type="email" id="email" placeholder="Enter your email address">
-                                        </div>
-                                        <div class="form-block__input">
-                                            <label for="pass">Password</label>
-                                            <input type="password" id="pass" placeholder="Enter your password">
-                                        </div>
-                                        <div class="form-block__input">
-                                            <label for="pass">Password</label>
-                                            <input type="password" id="pass" placeholder="Enter your password">
-                                        </div>
-                                        <div class="form-block__submit">
-                                            <button type="submit" class="snap-action">Submit</button>
-                                        </div>
+                            <h2 class="title">Your Account</h2>
+                            <div class="review _no-padding _m-bottom">
+                                <div class="review__top"><span>Profile</span></div>
+                                <div class="review__content d-flex s-between">
+                                    <div class="review__mail">
+                                            <i class="ic-envelope"></i>
+                                            <span class="user-email" contenteditable="false" >zadon.live@gmail.com</span>
                                     </div>
+                                    <button class="save-edit snap-action"><span>Edit</span></button>
+                                </div>
+                            </div>
+                            
+                            <div class="review _no-padding _m-bottom">
+                                <div class="review__top"><span>Change Password</span></div>
+                                <div class="review__content">
+                                  <div class="review__password">
+                                      <div class="review__password-input">
+                                          <label for="current-pass">Enter current password</label>
+                                          <input type="password" name="" id="current-pass" placeholder="Enter your password">
+                                      </div>
+                                  </div>
+                                  <div class="review__password d-flex s-between">
+                                      <div class="review__password-input">
+                                          <label for="new-pass">Enter new password</label>
+                                          <input type="password" name="" id="new-pass" placeholder="Enter your new password">
+                                      </div>
+                                      <div class="review__password-input">
+                                          <label for="confirm-pass">Confirm new password</label>
+                                          <input type="password" name="" id="confirm-pass" placeholder="Enter your new password">
+                                      </div>
+                                  </div>
+                                  <button class="snap-action _mt"><span>Save</span></button>
+                                </div>
                             </div>
                         </div>
                     </div>
