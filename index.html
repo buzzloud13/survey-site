@@ -17,7 +17,7 @@
 <body>
 
     <header class="header">
-    <div class="container">
+    <div class="container _desktop">
         <div class="row">
             <div class="col-xl-12">
                 <div class="header__wrapper d-flex a-center s-between">
@@ -40,6 +40,23 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="mobile-header _mobile">
+        <div class="header__logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="mobile-header__nav">
+            <a href="#" class="snap">
+                <svg role="img" aria-hidden="true">
+                    <use xlink:href="img/svg-sprite.svg#enter"></use>
+                </svg>
+                <span>Login</span>
+            </a>
+        </div>
+
+        <button class="hamburger hamburger--spin js-hamburger" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
     </div>
 </header>
 
@@ -140,9 +157,6 @@
     </div>
   </div>
     <script src="js/libs.min.js"></script>
-<script src="js/slick.min.js"></script>
-<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
-
 <script src="js/common.js"></script>
 
 </body>

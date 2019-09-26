@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    $(".main-nav").clone().appendTo(".mobile-header__nav");
+
+    $('.hamburger').on('click', function () {
+        $(this).toggleClass('is-active');
+        $('.mobile-header__nav').toggleClass('on-off');
+        searchBlockMobile.removeClass('on-off');
+      });
+
     
     var userMail = $('.user-email'),
         saveEdit = $('.save-edit');
